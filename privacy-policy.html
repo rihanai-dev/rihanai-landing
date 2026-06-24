@@ -114,9 +114,11 @@
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:var(--font-ar);background:var(--canvas);color:var(--ink);line-height:1.85;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+  body{font-family:var(--font-ar);background:var(--canvas);color:var(--ink);line-height:1.85;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;overflow-x:hidden}
   html[lang="en"] body{font-family:var(--font-en);line-height:1.7}
   a{color:inherit;text-decoration:none}
+  h1,h2,h3,h4{text-wrap:balance}
+  p{text-wrap:pretty}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
   .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
   .skip{position:absolute;top:-100%;left:1rem;z-index:999;background:var(--ink);color:#fff;padding:.75em 1.2em;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;transition:top .15s}
@@ -132,11 +134,12 @@
   .nav-links a.lnk{font-size:.92rem;font-weight:500;color:var(--ink-soft);transition:color .15s}
   .nav-links a.lnk:hover{color:var(--ink)}
   .nav-cta{display:flex;align-items:center;gap:.7rem}
-  .lang{font-family:var(--font-en);font-weight:700;font-size:.82rem;border:1.5px solid var(--hairline);background:transparent;color:var(--ink);width:42px;height:42px;border-radius:11px;cursor:pointer;transition:.15s}
+  .lang{font-family:var(--font-en);font-weight:700;font-size:.82rem;border:1.5px solid var(--hairline);background:transparent;color:var(--ink);width:42px;height:42px;border-radius:11px;cursor:pointer;transition:border-color .15s, color .15s, transform .12s}
   .lang:hover{border-color:var(--ink)}
   .btn{display:inline-flex;align-items:center;gap:.5em;font-weight:700;font-size:.95rem;padding:.7em 1.2em;border-radius:999px;border:1.5px solid transparent;transition:transform .18s ease, box-shadow .18s ease;cursor:pointer;white-space:nowrap}
   .btn-ghost{border-color:var(--hairline);color:var(--ink);background:transparent}
   .btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+  .btn:active,.lang:active{transform:scale(.96)}
   .arrow{display:inline-block;transition:transform .18s ease}
   html[dir="rtl"] .arrow{transform:scaleX(-1)}
 
