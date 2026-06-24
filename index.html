@@ -11,8 +11,8 @@
 <meta property="og:type" content="website" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" />
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" /></noscript>
+<link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=optional" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=optional" /></noscript>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 184 184'%3E%3Ccircle cx='92' cy='92' r='92' fill='%23012401'/%3E%3Cpath d='M45.5 59.5C19.6 61.5 3.6 109.6 43 122.8c.3.1.7.2 1 .2H56.5c1.7 0 3-1.3 3-3V110.5c0-1.7 1.3-3 3-3H74c1.7 0 3 1.3 3 3v9.1c0 1.8 1.6 3.2 3.4 3l8.2-1.1c6.4-1.5 11.9-6.5 14.9-15 2.7-7.6 4.7-13.6 9.1-15.5 1.5-.6 2.9.8 2.9 2.5l.1 26c0 1.8 1.6 3.3 3.4 3.1l10-1.1c.4 0 .7-.1 1-.3 4.1-2 10.8-5.5 13.5-12.8 3.5-9.5 6-16 10-18 1.4-.7 3.4-.6 5 0 1.7.2 3-1 3-2.6V73c0-1.7-1.3-3-3-3h-5c-5 .5-14.8 4.1-19.5 11-6.3 9.2-4.6 11.9-9.6 18.9-.3.4-.6.7-1.1.9-1.6.3-2.9-1.7-2.9-3.4V73c0-1.7-1.3-3-3-3h-7.1c-.2 0-.5 0-.7.1-4.9 1.3-15.4 6.3-20.6 16.4-6.6 13-4 14-6.6 14h-2c-1.7 0-3-1.3-3-3V87.5c0-1.7-1.3-3-3-3H56c-1.7 0-3 1.3-3 3v4.3c0 1.4 1 2.6 2.5 2.7l.5 0c1.4.2 2.5 1.3 2.5 2.8v2.2c0 1.7-1.3 3-3 3h-8.6c-.3 0-.5 0-.7-.1C38.5 99.9 32.9 82 44.9 75.3c.4-.2.9-.3 1.3-.3h35.3c1.7 0 3-1.3 3-3V62.5c0-1.7-1.3-3-3-3H45.5Z' fill='%2301D747'/%3E%3C/svg%3E" />
 <style>
   :root{
@@ -71,7 +71,7 @@
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;gap:1rem}
   .brand{display:flex;align-items:center;gap:.6em;font-family:var(--font-en);font-weight:800;font-size:1.18rem;letter-spacing:-.01em;direction:ltr}
   .brand svg{width:30px;height:30px;display:block}
-  .brand .dot{color:var(--green)}
+  .brand .dot{color:var(--green-700)}
   .nav-links{display:flex;align-items:center;gap:1.8rem}
   .nav-links a.lnk{font-size:.92rem;font-weight:500;color:var(--ink-soft);transition:color .15s}
   .nav-links a.lnk:hover{color:var(--ink)}
@@ -311,7 +311,7 @@
 </head>
 <body>
 
-<a class="skip" href="#top" data-ar="تجاوز إلى المحتوى" data-en="Skip to content">تجاوز إلى المحتوى</a>
+<a class="skip" href="#main" data-ar="تجاوز إلى المحتوى" data-en="Skip to content">تجاوز إلى المحتوى</a>
 
 <!-- ===== NAV ===== -->
 <header class="nav">
@@ -337,6 +337,7 @@
 </header>
 
 <!-- ===== HERO ===== -->
+<main id="main">
 <a id="top"></a>
 <section class="hero">
   <div class="wrap hero-inner">
@@ -607,25 +608,25 @@
     <div class="channels">
       <a class="ch c-call reveal" href="#">
         <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18M8 14h3M8 17h6"/></svg></div>
-        <h4 data-ar="احجز مكالمة" data-en="Book a call">احجز مكالمة</h4>
+        <h3 data-ar="احجز مكالمة" data-en="Book a call">احجز مكالمة</h3>
         <div class="val" data-ar="استشارة 30 دقيقة" data-en="30-min consultation">استشارة 30 دقيقة</div>
         <span class="go" data-ar="اختر موعدًا <span class='arrow'>→</span>" data-en="Pick a time <span class='arrow'>→</span>">اختر موعدًا <span class="arrow">→</span></span>
       </a>
       <a class="ch wa c-wa reveal" href="#">
         <div class="ci"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" style="fill:#1f9d52"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.04c-.24.68-1.42 1.32-1.95 1.36-.5.05-.5.41-3.15-.66-2.67-1.08-4.35-3.8-4.48-3.97-.13-.17-1.07-1.42-1.07-2.71 0-1.29.68-1.92.92-2.18.24-.26.52-.33.7-.33.17 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.81 2 .88 2.14.07.14.12.31.02.49-.09.18-.14.29-.28.45-.14.16-.29.36-.42.48-.14.13-.28.28-.12.55.16.27.71 1.18 1.53 1.91 1.06.94 1.95 1.24 2.22 1.38.27.14.43.12.59-.07.16-.19.68-.79.86-1.06.18-.27.36-.22.61-.13.25.09 1.59.75 1.86.89.27.13.45.2.52.31.07.12.07.66-.17 1.34z"/></svg></div>
-        <h4 data-ar="واتساب" data-en="WhatsApp">واتساب</h4>
+        <h3 data-ar="واتساب" data-en="WhatsApp">واتساب</h3>
         <div class="val c-wa-num">+966 50 906 9786</div>
         <span class="go" data-ar="ابدأ محادثة <span class='arrow'>→</span>" data-en="Start a chat <span class='arrow'>→</span>">ابدأ محادثة <span class="arrow">→</span></span>
       </a>
       <a class="ch c-mail reveal" href="#">
         <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/></svg></div>
-        <h4 data-ar="البريد" data-en="Email">البريد</h4>
+        <h3 data-ar="البريد" data-en="Email">البريد</h3>
         <div class="val c-mail-addr">omar@rihanai.com</div>
         <span class="go" data-ar="راسلنا <span class='arrow'>→</span>" data-en="Send an email <span class='arrow'>→</span>">راسلنا <span class="arrow">→</span></span>
       </a>
       <a class="ch c-tel reveal" href="#">
         <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></div>
-        <h4 data-ar="اتصال هاتفي" data-en="Phone">اتصال هاتفي</h4>
+        <h3 data-ar="اتصال هاتفي" data-en="Phone">اتصال هاتفي</h3>
         <div class="val c-tel-num">+966 50 906 9786</div>
         <span class="go" data-ar="اتصل الآن <span class='arrow'>→</span>" data-en="Call now <span class='arrow'>→</span>">اتصل الآن <span class="arrow">→</span></span>
       </a>
@@ -633,6 +634,8 @@
     <p class="contact-note" data-ar="// خدمة مُدارة · اتصال OAuth آمن · أنت توافق على كل إجراء" data-en="// managed service · secure OAuth · you approve every action">// خدمة مُدارة · اتصال OAuth آمن · أنت توافق على كل إجراء</p>
   </div>
 </section>
+
+</main>
 
 <!-- ===== FOOTER ===== -->
 <footer>
