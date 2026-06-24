@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>rihanai — تعليمات حذف البيانات / Data Deletion Instructions</title>
+<meta name="description" content="كيف تطلب حذف بياناتك من منصة ريحان، بما في ذلك بيانات Facebook وInstagram. rihanai data deletion instructions." />
+<meta name="robots" content="index, follow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 184 184'%3E%3Ccircle cx='92' cy='92' r='92' fill='%23012401'/%3E%3Cpath d='M45.5 59.5C19.6 61.5 3.6 109.6 43 122.8c.3.1.7.2 1 .2H56.5c1.7 0 3-1.3 3-3V110.5c0-1.7 1.3-3 3-3H74c1.7 0 3 1.3 3 3v9.1c0 1.8 1.6 3.2 3.4 3l8.2-1.1c6.4-1.5 11.9-6.5 14.9-15 2.7-7.6 4.7-13.6 9.1-15.5 1.5-.6 2.9.8 2.9 2.5l.1 26c0 1.8 1.6 3.3 3.4 3.1l10-1.1c.4 0 .7-.1 1-.3 4.1-2 10.8-5.5 13.5-12.8 3.5-9.5 6-16 10-18 1.4-.7 3.4-.6 5 0 1.7.2 3-1 3-2.6V73c0-1.7-1.3-3-3-3h-5c-5 .5-14.8 4.1-19.5 11-6.3 9.2-4.6 11.9-9.6 18.9-.3.4-.6.7-1.1.9-1.6.3-2.9-1.7-2.9-3.4V73c0-1.7-1.3-3-3-3h-7.1c-.2 0-.5 0-.7.1-4.9 1.3-15.4 6.3-20.6 16.4-6.6 13-4 14-6.6 14h-2c-1.7 0-3-1.3-3-3V87.5c0-1.7-1.3-3-3-3H56c-1.7 0-3 1.3-3 3v4.3c0 1.4 1 2.6 2.5 2.7l.5 0c1.4.2 2.5 1.3 2.5 2.8v2.2c0 1.7-1.3 3-3 3h-8.6c-.3 0-.5 0-.7-.1C38.5 99.9 32.9 82 44.9 75.3c.4-.2.9-.3 1.3-.3h35.3c1.7 0 3-1.3 3-3V62.5c0-1.7-1.3-3-3-3H45.5Z' fill='%2301D747'/%3E%3C/svg%3E" />
+<style>
+  :root{
+    --ink:#012401; --ink-soft:#2E3B30;
+    --green:#01D747; --green-700:#04852E;
+    --lime:#D4ED6D; --lime-deep:#5C7517;
+    --canvas:#F5F5F5; --surface:#FFFFFF; --surface-soft:#F0F2F0; --tint:#E8FCEE;
+    --muted:#5F6B62; --muted-soft:#94A099; --hairline:#E6E8E6;
+    --on-dark-muted:#9FB7A6; --on-dark-hairline:rgba(212,237,109,.18);
+    --maxw:920px; --radius:22px; --radius-sm:14px;
+    --shadow-soft:0 18px 44px -30px rgba(1,36,1,.35);
+    --mono:'JetBrains Mono', ui-monospace, Menlo, monospace;
+    --font-en:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-ar:'Tajawal', 'Plus Jakarta Sans', -apple-system, 'Segoe UI', sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--font-ar);background:var(--canvas);color:var(--ink);line-height:1.85;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+  html[lang="en"] body{font-family:var(--font-en);line-height:1.7}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(245,245,245,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--hairline)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;gap:1rem;max-width:1140px;margin:0 auto;padding:0 28px}
+  .brand{display:flex;align-items:center;gap:.6em;font-family:var(--font-en);font-weight:800;font-size:1.18rem;letter-spacing:-.01em;direction:ltr}
+  .brand svg{width:30px;height:30px;display:block}
+  .brand .dot{color:var(--green)}
+  .nav-links{display:flex;align-items:center;gap:1.8rem}
+  .nav-links a.lnk{font-size:.92rem;font-weight:500;color:var(--ink-soft);transition:color .15s}
+  .nav-links a.lnk:hover{color:var(--ink)}
+  .nav-cta{display:flex;align-items:center;gap:.7rem}
+  .lang{font-family:var(--font-en);font-weight:700;font-size:.82rem;border:1.5px solid var(--hairline);background:transparent;color:var(--ink);width:42px;height:42px;border-radius:11px;cursor:pointer;transition:.15s}
+  .lang:hover{border-color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:.5em;font-weight:700;font-size:.95rem;padding:.7em 1.2em;border-radius:999px;border:1.5px solid transparent;transition:transform .18s ease, box-shadow .18s ease;cursor:pointer;white-space:nowrap}
+  .btn-ghost{border-color:var(--hairline);color:var(--ink);background:transparent}
+  .btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+  .arrow{display:inline-block;transition:transform .18s ease}
+  html[dir="rtl"] .arrow{transform:scaleX(-1)}
+
+  .legal-hero{position:relative;background:radial-gradient(1100px 460px at 80% -20%, rgba(1,215,71,.20), transparent 60%),var(--ink);color:#fff;overflow:hidden;border-bottom-left-radius:34px;border-bottom-right-radius:34px}
+  .legal-hero::after{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--on-dark-hairline) 1px,transparent 1px),linear-gradient(90deg,var(--on-dark-hairline) 1px,transparent 1px);background-size:54px 54px;-webkit-mask-image:radial-gradient(800px 500px at 80% 0%, #000 0%, transparent 70%);mask-image:radial-gradient(800px 500px at 80% 0%, #000 0%, transparent 70%);opacity:.5}
+  .legal-hero .wrap{position:relative;z-index:2;padding:62px 28px 56px}
+  .eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--lime);display:inline-flex;align-items:center;gap:.55em;margin-bottom:1rem}
+  .eyebrow::before{content:"";width:22px;height:1.5px;background:var(--lime);opacity:.7}
+  html[lang="ar"] .eyebrow{font-family:var(--font-ar);letter-spacing:0;text-transform:none;font-weight:700}
+  .legal-hero h1{font-size:clamp(2rem,4.2vw,3rem);line-height:1.12;letter-spacing:-.02em;font-weight:800;margin-bottom:.9rem}
+  .legal-hero .updated{font-family:var(--mono);font-size:.82rem;color:var(--on-dark-muted)}
+  html[lang="ar"] .legal-hero .updated{font-family:var(--font-ar)}
+
+  .legal-body{padding:54px 0 30px}
+  .legal-body .lead{font-size:1.1rem;color:var(--muted);margin-bottom:34px}
+  .legal-body h2{font-size:1.35rem;letter-spacing:-.01em;font-weight:800;margin:42px 0 14px;padding-top:14px;border-top:1px solid var(--hairline);display:flex;align-items:baseline;gap:.7em}
+  .legal-body h2 .nx{font-family:var(--mono);font-size:.85rem;color:var(--green-700);font-weight:700;flex:none}
+  html[lang="ar"] .legal-body h2 .nx{font-family:var(--font-ar)}
+  .legal-body h3{font-size:1.05rem;font-weight:700;margin:24px 0 8px;color:var(--ink-soft)}
+  .legal-body p{margin-bottom:14px;color:var(--ink-soft)}
+  .legal-body ul,.legal-body ol{margin:0 0 16px;padding-inline-start:1.3em}
+  .legal-body li{margin-bottom:9px;color:var(--ink-soft)}
+  .legal-body ol li{margin-bottom:12px}
+  .legal-body a.inl{color:var(--green-700);font-weight:600;border-bottom:1.5px solid var(--lime);padding-bottom:1px}
+  .legal-body strong{color:var(--ink);font-weight:700}
+  .callout{background:var(--surface);border:1px solid var(--hairline);border-inline-start:3px solid var(--green);border-radius:var(--radius-sm);padding:18px 20px;margin:22px 0;box-shadow:var(--shadow-soft)}
+  .callout p{margin:0;font-size:.95rem}
+  .steps-card{background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);padding:24px 26px;margin:18px 0;box-shadow:var(--shadow-soft)}
+  .steps-card h3{margin-top:0}
+  .mailbtn{display:inline-flex;align-items:center;gap:.5em;background:var(--green);color:var(--ink);font-weight:700;padding:.7em 1.3em;border-radius:999px;margin-top:6px;direction:ltr;unicode-bidi:isolate;box-shadow:0 10px 30px -10px rgba(1,215,71,.35)}
+  .mailbtn:hover{transform:translateY(-2px)}
+  .contact-card{background:var(--ink);color:#fff;border-radius:var(--radius);padding:28px 26px;margin:30px 0 0}
+  .contact-card h3{color:#fff;margin:0 0 12px}
+  .contact-card p{color:var(--on-dark-muted);margin-bottom:6px}
+  .contact-card a{color:var(--lime);font-weight:600;direction:ltr;unicode-bidi:isolate;display:inline-block}
+  .ltr{direction:ltr;unicode-bidi:isolate}
+
+  footer{background:var(--ink);color:var(--on-dark-muted);padding:46px 0 40px;margin-top:60px}
+  .foot-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;max-width:1140px;margin:0 auto;padding:0 28px}
+  .foot-inner .brand{color:#fff}
+  .foot-links{display:flex;gap:1.6rem;font-size:.88rem;flex-wrap:wrap}
+  .foot-links a:hover{color:var(--lime)}
+  .foot-note{max-width:1140px;margin:26px auto 0;padding:22px 28px 0;border-top:1px solid var(--on-dark-hairline);font-size:.78rem;color:var(--muted-soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+  @media (max-width:620px){
+    .nav-links{display:none}
+    .legal-body h2{flex-direction:column;gap:.2em}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="rihanai">
+      <svg viewBox="0 0 184 184" aria-hidden="true"><circle cx="92" cy="92" r="92" fill="#012401"/><path d="M45.5 59.5C19.6 61.5 3.6 109.6 43 122.8c.3.1.7.2 1 .2H56.5c1.7 0 3-1.3 3-3V110.5c0-1.7 1.3-3 3-3H74c1.7 0 3 1.3 3 3v9.1c0 1.8 1.6 3.2 3.4 3l8.2-1.1c6.4-1.5 11.9-6.5 14.9-15 2.7-7.6 4.7-13.6 9.1-15.5 1.5-.6 2.9.8 2.9 2.5l.1 26c0 1.8 1.6 3.3 3.4 3.1l10-1.1c.4 0 .7-.1 1-.3 4.1-2 10.8-5.5 13.5-12.8 3.5-9.5 6-16 10-18 1.4-.7 3.4-.6 5 0 1.7.2 3-1 3-2.6V73c0-1.7-1.3-3-3-3h-5c-5 .5-14.8 4.1-19.5 11-6.3 9.2-4.6 11.9-9.6 18.9-.3.4-.6.7-1.1.9-1.6.3-2.9-1.7-2.9-3.4V73c0-1.7-1.3-3-3-3h-7.1c-.2 0-.5 0-.7.1-4.9 1.3-15.4 6.3-20.6 16.4-6.6 13-4 14-6.6 14h-2c-1.7 0-3-1.3-3-3V87.5c0-1.7-1.3-3-3-3H56c-1.7 0-3 1.3-3 3v4.3c0 1.4 1 2.6 2.5 2.7l.5 0c1.4.2 2.5 1.3 2.5 2.8v2.2c0 1.7-1.3 3-3 3h-8.6c-.3 0-.5 0-.7-.1C38.5 99.9 32.9 82 44.9 75.3c.4-.2.9-.3 1.3-.3h35.3c1.7 0 3-1.3 3-3V62.5c0-1.7-1.3-3-3-3H45.5Z" fill="#01D747"/></svg>
+      Rihan<span class="dot">ai</span>
+    </a>
+    <nav class="nav-links">
+      <a class="lnk" href="index.html#platform" data-ar="المنصة" data-en="Platform">المنصة</a>
+      <a class="lnk" href="index.html#agents" data-ar="الوكلاء" data-en="Agents">الوكلاء</a>
+      <a class="lnk" href="index.html#how" data-ar="كيف نعمل" data-en="How it works">كيف نعمل</a>
+      <a class="lnk" href="index.html#contact" data-ar="تواصل" data-en="Contact">تواصل</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="lang" id="langToggle" aria-label="Switch language">EN</button>
+      <a class="btn btn-ghost" href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية <span class="arrow">→</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="legal-hero">
+  <div class="wrap">
+    <span class="eyebrow" data-ar="قانوني" data-en="Legal">قانوني</span>
+    <h1 data-ar="تعليمات حذف البيانات" data-en="Data Deletion Instructions">تعليمات حذف البيانات</h1>
+    <div class="updated" data-ar="آخر تحديث: 24 يونيو 2026" data-en="Last updated: June 24, 2026">آخر تحديث: 24 يونيو 2026</div>
+  </div>
+</section>
+
+<main class="legal-body">
+  <div class="wrap">
+    <p class="lead" data-ar="نحترم حقّك في التحكّم ببياناتك. توضّح هذه الصفحة كيف تطلب حذف بياناتك من منصة ريحان (rihanai)، بما في ذلك أي بيانات وصلنا إليها من حسابك على Facebook أو Instagram عبر اتصال OAuth." data-en="We respect your right to control your data. This page explains how to request deletion of your data from rihanai, including any data we accessed from your Facebook or Instagram account through the OAuth connection.">نحترم حقّك في التحكّم ببياناتك. توضّح هذه الصفحة كيف تطلب حذف بياناتك من منصة ريحان (rihanai)، بما في ذلك أي بيانات وصلنا إليها من حسابك على Facebook أو Instagram عبر اتصال OAuth.</p>
+
+    <h2><span class="nx">01</span><span data-ar="ما البيانات التي قد نحتفظ بها" data-en="What data we may hold">ما البيانات التي قد نحتفظ بها</span></h2>
+    <ul>
+      <li data-ar="معلومات حسابك ومعلومات التواصل (الاسم، الشركة، البريد، الهاتف)." data-en="Your account and contact information (name, company, email, phone).">معلومات حسابك ومعلومات التواصل (الاسم، الشركة، البريد، الهاتف).</li>
+      <li data-ar="بيانات وصلنا إليها من منصّاتك المرتبطة — مثل مقاييس الحملات والإعلانات على Meta/Instagram، وبيانات متجرك وقنواتك الأخرى." data-en="Data we accessed from your connected platforms — such as Meta/Instagram campaign and ad metrics, and data from your store and other channels.">بيانات وصلنا إليها من منصّاتك المرتبطة — مثل مقاييس الحملات والإعلانات على Meta/Instagram، وبيانات متجرك وقنواتك الأخرى.</li>
+      <li data-ar="رموز الوصول (OAuth tokens) المُشفّرة الخاصة بالاتصال." data-en="The encrypted OAuth access tokens used for the connection.">رموز الوصول (OAuth tokens) المُشفّرة الخاصة بالاتصال.</li>
+    </ul>
+
+    <h2><span class="nx">02</span><span data-ar="الطريقة الأولى: حذف ذاتي فوري" data-en="Option 1: instant self-service removal">الطريقة الأولى: حذف ذاتي فوري</span></h2>
+    <p data-ar="يمكنك قطع وصولنا فورًا بإزالة تطبيقنا من إعدادات حسابك على Meta:" data-en="You can revoke our access immediately by removing our app from your Meta account settings:">يمكنك قطع وصولنا فورًا بإزالة تطبيقنا من إعدادات حسابك على Meta:</p>
+    <div class="steps-card">
+      <ol>
+        <li data-ar="افتح إعدادات Facebook ← <strong>الإعدادات والخصوصية</strong> ← <strong>الإعدادات</strong>." data-en="Open Facebook <strong>Settings &amp; Privacy</strong> → <strong>Settings</strong>.">افتح إعدادات Facebook ← <strong>الإعدادات والخصوصية</strong> ← <strong>الإعدادات</strong>.</li>
+        <li data-ar="اذهب إلى <strong>التطبيقات والمواقع</strong> (Apps and Websites)." data-en="Go to <strong>Apps and Websites</strong>.">اذهب إلى <strong>التطبيقات والمواقع</strong> (Apps and Websites).</li>
+        <li data-ar="ابحث عن تطبيق <strong>rihanai</strong> في قائمة التطبيقات النشطة." data-en="Find the <strong>rihanai</strong> app in your active apps list.">ابحث عن تطبيق <strong>rihanai</strong> في قائمة التطبيقات النشطة.</li>
+        <li data-ar="اضغط <strong>إزالة</strong> (Remove) لإلغاء وصولنا إلى حسابك." data-en="Click <strong>Remove</strong> to revoke our access to your account.">اضغط <strong>إزالة</strong> (Remove) لإلغاء وصولنا إلى حسابك.</li>
+      </ol>
+      <p data-ar="إزالة التطبيق توقف أي وصول جديد فورًا. لحذف ما خزّناه مسبقًا بالكامل، أكمل أيضًا الطريقة الثانية أدناه." data-en="Removing the app stops any new access immediately. To also erase everything we previously stored, complete Option 2 below.">إزالة التطبيق توقف أي وصول جديد فورًا. لحذف ما خزّناه مسبقًا بالكامل، أكمل أيضًا الطريقة الثانية أدناه.</p>
+    </div>
+
+    <h2><span class="nx">02</span><span data-ar="الطريقة الثانية: طلب حذف كامل" data-en="Option 2: request full deletion">الطريقة الثانية: طلب حذف كامل</span></h2>
+    <p data-ar="لحذف جميع بياناتك من أنظمتنا، أرسل لنا طلبًا عبر البريد الإلكتروني يتضمّن:" data-en="To delete all of your data from our systems, send us a request by email including:">لحذف جميع بياناتك من أنظمتنا، أرسل لنا طلبًا عبر البريد الإلكتروني يتضمّن:</p>
+    <ul>
+      <li data-ar="الاسم واسم الشركة المرتبط بحسابك." data-en="The name and company associated with your account.">الاسم واسم الشركة المرتبط بحسابك.</li>
+      <li data-ar="البريد الإلكتروني المستخدم في الخدمة." data-en="The email used with the service.">البريد الإلكتروني المستخدم في الخدمة.</li>
+      <li data-ar="عبارة «طلب حذف بيانات» في عنوان الرسالة، وذكر المنصات التي تريد حذف بياناتها (مثل Meta/Facebook/Instagram)." data-en="The subject line &quot;Data Deletion Request&quot;, and the platforms whose data you want deleted (e.g. Meta/Facebook/Instagram).">عبارة «طلب حذف بيانات» في عنوان الرسالة، وذكر المنصات التي تريد حذف بياناتها (مثل Meta/Facebook/Instagram).</li>
+    </ul>
+    <a class="mailbtn" href="mailto:omar@rihanai.com?subject=Data%20Deletion%20Request%20-%20rihanai&amp;body=Name%2FCompany%3A%20%0AAccount%20email%3A%20%0APlatforms%20to%20delete%3A%20">📧 omar@rihanai.com</a>
+
+    <h2><span class="nx">03</span><span data-ar="ماذا نحذف ومتى" data-en="What we delete & when">ماذا نحذف ومتى</span></h2>
+    <div class="callout"><p data-ar="عند تأكيد هويتك، نحذف بياناتك الشخصية وبيانات منصّاتك المرتبطة ورموز الوصول من أنظمتنا الحيّة خلال <strong>30 يومًا</strong> كحدّ أقصى، ومن النسخ الاحتياطية ضمن دورة النسخ المعتادة. نرسل لك تأكيدًا عند اكتمال الحذف." data-en="Once your identity is confirmed, we delete your personal data, connected-platform data, and access tokens from our live systems within a maximum of <strong>30 days</strong>, and from backups within our normal backup cycle. We send you a confirmation once deletion is complete.">عند تأكيد هويتك، نحذف بياناتك الشخصية وبيانات منصّاتك المرتبطة ورموز الوصول من أنظمتنا الحيّة خلال <strong>30 يومًا</strong> كحدّ أقصى، ومن النسخ الاحتياطية ضمن دورة النسخ المعتادة. نرسل لك تأكيدًا عند اكتمال الحذف.</p></div>
+
+    <h2><span class="nx">04</span><span data-ar="ما الذي قد نحتفظ به" data-en="What we may retain">ما الذي قد نحتفظ به</span></h2>
+    <p data-ar="قد نحتفظ بحدٍّ أدنى من السجلات التي يلزمنا الاحتفاظ بها لأغراض قانونية أو محاسبية أو لمنع الاحتيال، وذلك للمدة التي يفرضها القانون فقط، ثم تُحذف. لا تتضمّن هذه السجلات بيانات منصّاتك التحليلية." data-en="We may retain a minimum of records that we are required to keep for legal, accounting, or fraud-prevention purposes, only for the period required by law, after which they are deleted. These records do not include your platform analytics data.">قد نحتفظ بحدٍّ أدنى من السجلات التي يلزمنا الاحتفاظ بها لأغراض قانونية أو محاسبية أو لمنع الاحتيال، وذلك للمدة التي يفرضها القانون فقط، ثم تُحذف. لا تتضمّن هذه السجلات بيانات منصّاتك التحليلية.</p>
+
+    <h2><span class="nx">05</span><span data-ar="أسئلة أو متابعة" data-en="Questions or follow-up">أسئلة أو متابعة</span></h2>
+    <p data-ar="إن واجهتك أي صعوبة أو رغبت في متابعة حالة طلبك، تواصل معنا وسنساعدك. لمزيد من التفاصيل عن بياناتك راجع <a class='inl' href='privacy-policy.html'>سياسة الخصوصية</a>." data-en="If you run into any difficulty or want to follow up on your request, contact us and we will help. For more detail about your data, see our <a class='inl' href='privacy-policy.html'>Privacy Policy</a>.">إن واجهتك أي صعوبة أو رغبت في متابعة حالة طلبك، تواصل معنا وسنساعدك. لمزيد من التفاصيل عن بياناتك راجع <a class="inl" href="privacy-policy.html">سياسة الخصوصية</a>.</p>
+
+    <div class="contact-card">
+      <h3 data-ar="جهة الاتصال لحذف البيانات" data-en="Data deletion contact">جهة الاتصال لحذف البيانات</h3>
+      <p data-ar="نردّ على طلبات الحذف عادةً خلال يوم عمل واحد:" data-en="We usually respond to deletion requests within one business day:">نردّ على طلبات الحذف عادةً خلال يوم عمل واحد:</p>
+      <p><a href="mailto:omar@rihanai.com?subject=Data%20Deletion%20Request%20-%20rihanai">omar@rihanai.com</a></p>
+      <p><a href="https://wa.me/966509069786" target="_blank" rel="noopener">WhatsApp: +966 50 906 9786</a></p>
+      <p class="ltr">rihanai.com</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 184 184" aria-hidden="true"><circle cx="92" cy="92" r="92" fill="#01D747"/><path d="M45.5 59.5C19.6 61.5 3.6 109.6 43 122.8c.3.1.7.2 1 .2H56.5c1.7 0 3-1.3 3-3V110.5c0-1.7 1.3-3 3-3H74c1.7 0 3 1.3 3 3v9.1c0 1.8 1.6 3.2 3.4 3l8.2-1.1c6.4-1.5 11.9-6.5 14.9-15 2.7-7.6 4.7-13.6 9.1-15.5 1.5-.6 2.9.8 2.9 2.5l.1 26c0 1.8 1.6 3.3 3.4 3.1l10-1.1c.4 0 .7-.1 1-.3 4.1-2 10.8-5.5 13.5-12.8 3.5-9.5 6-16 10-18 1.4-.7 3.4-.6 5 0 1.7.2 3-1 3-2.6V73c0-1.7-1.3-3-3-3h-5c-5 .5-14.8 4.1-19.5 11-6.3 9.2-4.6 11.9-9.6 18.9-.3.4-.6.7-1.1.9-1.6.3-2.9-1.7-2.9-3.4V73c0-1.7-1.3-3-3-3h-7.1c-.2 0-.5 0-.7.1-4.9 1.3-15.4 6.3-20.6 16.4-6.6 13-4 14-6.6 14h-2c-1.7 0-3-1.3-3-3V87.5c0-1.7-1.3-3-3-3H56c-1.7 0-3 1.3-3 3v4.3c0 1.4 1 2.6 2.5 2.7l.5 0c1.4.2 2.5 1.3 2.5 2.8v2.2c0 1.7-1.3 3-3 3h-8.6c-.3 0-.5 0-.7-.1C38.5 99.9 32.9 82 44.9 75.3c.4-.2.9-.3 1.3-.3h35.3c1.7 0 3-1.3 3-3V62.5c0-1.7-1.3-3-3-3H45.5Z" fill="#012401"/></svg>
+      Rihan<span style="color:var(--green)">ai</span>
+    </a>
+    <nav class="foot-links">
+      <a href="privacy-policy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</a>
+      <a href="terms-of-service.html" data-ar="شروط الخدمة" data-en="Terms of Service">شروط الخدمة</a>
+      <a href="data-deletion-instructions.html" data-ar="حذف البيانات" data-en="Data Deletion">حذف البيانات</a>
+      <a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+    </nav>
+  </div>
+  <div class="foot-note">
+    <span data-ar="ذكاء تسويقي مُدار لمؤسسات التجارة الإلكترونية." data-en="Managed marketing intelligence for enterprise eCommerce.">ذكاء تسويقي مُدار لمؤسسات التجارة الإلكترونية.</span>
+    <span class="ltr">© 2026 rihanai · rihanai.com</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var lang='ar';
+  function applyLang(l){
+    lang=l;
+    document.documentElement.lang=l;
+    document.documentElement.dir=(l==='ar')?'rtl':'ltr';
+    document.querySelectorAll('[data-ar]').forEach(function(el){
+      var v=el.getAttribute('data-'+l); if(v!=null) el.innerHTML=v;
+    });
+    var lt=document.getElementById('langToggle'); if(lt) lt.textContent=(l==='ar')?'EN':'ع';
+    try{ localStorage.setItem('rihan_lang',l); }catch(e){}
+  }
+  var saved=null; try{ saved=localStorage.getItem('rihan_lang'); }catch(e){}
+  document.getElementById('langToggle').addEventListener('click',function(){ applyLang(lang==='ar'?'en':'ar'); });
+  if(saved==='en'||saved==='ar') applyLang(saved); else applyLang('ar');
+})();
+</script>
+</body>
+</html>
