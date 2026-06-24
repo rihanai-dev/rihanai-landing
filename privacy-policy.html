@@ -113,13 +113,16 @@
     --font-ar:'Tajawal', 'Plus Jakarta Sans', -apple-system, 'Segoe UI', sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:var(--font-ar);background:var(--canvas);color:var(--ink);line-height:1.85;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;overflow-x:hidden}
+  html{scroll-behavior:smooth;overflow-x:clip}
+  body{font-family:var(--font-ar);background:var(--canvas);color:var(--ink);line-height:1.85;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;overflow-x:clip}
   html[lang="en"] body{font-family:var(--font-en);line-height:1.7}
   a{color:inherit;text-decoration:none}
   h1,h2,h3,h4{text-wrap:balance}
   p{text-wrap:pretty}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  /* mobile hardening */
+  .nav-inner>*,.foot-inner>*,.foot-note>*,.foot-links>*{min-width:0}
+  h1,h2,h3,h4,p,.legal-body li,.contact-card a,.foot-note span,.legal-hero .updated{overflow-wrap:break-word}
   .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
   .skip{position:absolute;top:-100%;left:1rem;z-index:999;background:var(--ink);color:#fff;padding:.75em 1.2em;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;transition:top .15s}
   .skip:focus{top:0;color:var(--lime)}
