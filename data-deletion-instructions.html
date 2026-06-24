@@ -8,7 +8,8 @@
 <meta name="robots" content="index, follow" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" /></noscript>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 184 184'%3E%3Ccircle cx='92' cy='92' r='92' fill='%23012401'/%3E%3Cpath d='M45.5 59.5C19.6 61.5 3.6 109.6 43 122.8c.3.1.7.2 1 .2H56.5c1.7 0 3-1.3 3-3V110.5c0-1.7 1.3-3 3-3H74c1.7 0 3 1.3 3 3v9.1c0 1.8 1.6 3.2 3.4 3l8.2-1.1c6.4-1.5 11.9-6.5 14.9-15 2.7-7.6 4.7-13.6 9.1-15.5 1.5-.6 2.9.8 2.9 2.5l.1 26c0 1.8 1.6 3.3 3.4 3.1l10-1.1c.4 0 .7-.1 1-.3 4.1-2 10.8-5.5 13.5-12.8 3.5-9.5 6-16 10-18 1.4-.7 3.4-.6 5 0 1.7.2 3-1 3-2.6V73c0-1.7-1.3-3-3-3h-5c-5 .5-14.8 4.1-19.5 11-6.3 9.2-4.6 11.9-9.6 18.9-.3.4-.6.7-1.1.9-1.6.3-2.9-1.7-2.9-3.4V73c0-1.7-1.3-3-3-3h-7.1c-.2 0-.5 0-.7.1-4.9 1.3-15.4 6.3-20.6 16.4-6.6 13-4 14-6.6 14h-2c-1.7 0-3-1.3-3-3V87.5c0-1.7-1.3-3-3-3H56c-1.7 0-3 1.3-3 3v4.3c0 1.4 1 2.6 2.5 2.7l.5 0c1.4.2 2.5 1.3 2.5 2.8v2.2c0 1.7-1.3 3-3 3h-8.6c-.3 0-.5 0-.7-.1C38.5 99.9 32.9 82 44.9 75.3c.4-.2.9-.3 1.3-.3h35.3c1.7 0 3-1.3 3-3V62.5c0-1.7-1.3-3-3-3H45.5Z' fill='%2301D747'/%3E%3C/svg%3E" />
 <style>
   :root{
@@ -16,8 +17,9 @@
     --green:#01D747; --green-700:#04852E;
     --lime:#D4ED6D; --lime-deep:#5C7517;
     --canvas:#F5F5F5; --surface:#FFFFFF; --surface-soft:#F0F2F0; --tint:#E8FCEE;
-    --muted:#5F6B62; --muted-soft:#94A099; --hairline:#E6E8E6;
+    --muted:#5F6B62; --muted-soft:#65726B; --hairline:#E6E8E6;
     --on-dark-muted:#9FB7A6; --on-dark-hairline:rgba(212,237,109,.18);
+    --coral:#C73D30;
     --maxw:920px; --radius:22px; --radius-sm:14px;
     --shadow-soft:0 18px 44px -30px rgba(1,36,1,.35);
     --mono:'JetBrains Mono', ui-monospace, Menlo, monospace;
@@ -31,6 +33,8 @@
   a{color:inherit;text-decoration:none}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
   .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+  .skip{position:absolute;top:-100%;left:1rem;z-index:999;background:var(--ink);color:#fff;padding:.75em 1.2em;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;transition:top .15s}
+  .skip:focus{top:0;color:var(--lime)}
 
   header.nav{position:sticky;top:0;z-index:50;background:rgba(245,245,245,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--hairline)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;gap:1rem;max-width:1140px;margin:0 auto;padding:0 28px}
@@ -88,7 +92,7 @@
   .foot-inner .brand{color:#fff}
   .foot-links{display:flex;gap:1.6rem;font-size:.88rem;flex-wrap:wrap}
   .foot-links a:hover{color:var(--lime)}
-  .foot-note{max-width:1140px;margin:26px auto 0;padding:22px 28px 0;border-top:1px solid var(--on-dark-hairline);font-size:.78rem;color:var(--muted-soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .foot-note{max-width:1140px;margin:26px auto 0;padding:22px 28px 0;border-top:1px solid var(--on-dark-hairline);font-size:.78rem;color:var(--on-dark-muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
   @media (max-width:620px){
     .nav-links{display:none}
@@ -98,13 +102,15 @@
 </head>
 <body>
 
+<a class="skip" href="#main" data-ar="تجاوز إلى المحتوى" data-en="Skip to content">تجاوز إلى المحتوى</a>
+
 <header class="nav">
   <div class="nav-inner">
     <a href="index.html" class="brand" aria-label="rihanai">
       <svg viewBox="0 0 184 184" aria-hidden="true"><circle cx="92" cy="92" r="92" fill="#012401"/><path d="M45.5 59.5C19.6 61.5 3.6 109.6 43 122.8c.3.1.7.2 1 .2H56.5c1.7 0 3-1.3 3-3V110.5c0-1.7 1.3-3 3-3H74c1.7 0 3 1.3 3 3v9.1c0 1.8 1.6 3.2 3.4 3l8.2-1.1c6.4-1.5 11.9-6.5 14.9-15 2.7-7.6 4.7-13.6 9.1-15.5 1.5-.6 2.9.8 2.9 2.5l.1 26c0 1.8 1.6 3.3 3.4 3.1l10-1.1c.4 0 .7-.1 1-.3 4.1-2 10.8-5.5 13.5-12.8 3.5-9.5 6-16 10-18 1.4-.7 3.4-.6 5 0 1.7.2 3-1 3-2.6V73c0-1.7-1.3-3-3-3h-5c-5 .5-14.8 4.1-19.5 11-6.3 9.2-4.6 11.9-9.6 18.9-.3.4-.6.7-1.1.9-1.6.3-2.9-1.7-2.9-3.4V73c0-1.7-1.3-3-3-3h-7.1c-.2 0-.5 0-.7.1-4.9 1.3-15.4 6.3-20.6 16.4-6.6 13-4 14-6.6 14h-2c-1.7 0-3-1.3-3-3V87.5c0-1.7-1.3-3-3-3H56c-1.7 0-3 1.3-3 3v4.3c0 1.4 1 2.6 2.5 2.7l.5 0c1.4.2 2.5 1.3 2.5 2.8v2.2c0 1.7-1.3 3-3 3h-8.6c-.3 0-.5 0-.7-.1C38.5 99.9 32.9 82 44.9 75.3c.4-.2.9-.3 1.3-.3h35.3c1.7 0 3-1.3 3-3V62.5c0-1.7-1.3-3-3-3H45.5Z" fill="#01D747"/></svg>
       Rihan<span class="dot">ai</span>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Main navigation / القائمة الرئيسية">
       <a class="lnk" href="index.html#platform" data-ar="المنصة" data-en="Platform">المنصة</a>
       <a class="lnk" href="index.html#agents" data-ar="الوكلاء" data-en="Agents">الوكلاء</a>
       <a class="lnk" href="index.html#how" data-ar="كيف نعمل" data-en="How it works">كيف نعمل</a>
@@ -125,7 +131,7 @@
   </div>
 </section>
 
-<main class="legal-body">
+<main id="main" class="legal-body">
   <div class="wrap">
     <p class="lead" data-ar="نحترم حقّك في التحكّم ببياناتك. توضّح هذه الصفحة كيف تطلب حذف بياناتك من منصة ريحان (rihanai)، بما في ذلك أي بيانات وصلنا إليها من حسابك على Facebook أو Instagram عبر اتصال OAuth." data-en="We respect your right to control your data. This page explains how to request deletion of your data from rihanai, including any data we accessed from your Facebook or Instagram account through the OAuth connection.">نحترم حقّك في التحكّم ببياناتك. توضّح هذه الصفحة كيف تطلب حذف بياناتك من منصة ريحان (rihanai)، بما في ذلك أي بيانات وصلنا إليها من حسابك على Facebook أو Instagram عبر اتصال OAuth.</p>
 
@@ -182,7 +188,7 @@
       <svg viewBox="0 0 184 184" aria-hidden="true"><circle cx="92" cy="92" r="92" fill="#01D747"/><path d="M45.5 59.5C19.6 61.5 3.6 109.6 43 122.8c.3.1.7.2 1 .2H56.5c1.7 0 3-1.3 3-3V110.5c0-1.7 1.3-3 3-3H74c1.7 0 3 1.3 3 3v9.1c0 1.8 1.6 3.2 3.4 3l8.2-1.1c6.4-1.5 11.9-6.5 14.9-15 2.7-7.6 4.7-13.6 9.1-15.5 1.5-.6 2.9.8 2.9 2.5l.1 26c0 1.8 1.6 3.3 3.4 3.1l10-1.1c.4 0 .7-.1 1-.3 4.1-2 10.8-5.5 13.5-12.8 3.5-9.5 6-16 10-18 1.4-.7 3.4-.6 5 0 1.7.2 3-1 3-2.6V73c0-1.7-1.3-3-3-3h-5c-5 .5-14.8 4.1-19.5 11-6.3 9.2-4.6 11.9-9.6 18.9-.3.4-.6.7-1.1.9-1.6.3-2.9-1.7-2.9-3.4V73c0-1.7-1.3-3-3-3h-7.1c-.2 0-.5 0-.7.1-4.9 1.3-15.4 6.3-20.6 16.4-6.6 13-4 14-6.6 14h-2c-1.7 0-3-1.3-3-3V87.5c0-1.7-1.3-3-3-3H56c-1.7 0-3 1.3-3 3v4.3c0 1.4 1 2.6 2.5 2.7l.5 0c1.4.2 2.5 1.3 2.5 2.8v2.2c0 1.7-1.3 3-3 3h-8.6c-.3 0-.5 0-.7-.1C38.5 99.9 32.9 82 44.9 75.3c.4-.2.9-.3 1.3-.3h35.3c1.7 0 3-1.3 3-3V62.5c0-1.7-1.3-3-3-3H45.5Z" fill="#012401"/></svg>
       Rihan<span style="color:var(--green)">ai</span>
     </a>
-    <nav class="foot-links">
+    <nav class="foot-links" aria-label="Footer navigation / روابط التذييل">
       <a href="privacy-policy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</a>
       <a href="terms-of-service.html" data-ar="شروط الخدمة" data-en="Terms of Service">شروط الخدمة</a>
       <a href="data-deletion-instructions.html" data-ar="حذف البيانات" data-en="Data Deletion">حذف البيانات</a>
