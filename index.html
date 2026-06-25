@@ -175,7 +175,7 @@
   /* ---------- hero ---------- */
   .hero{position:relative;background:radial-gradient(1200px 520px at 78% -10%, rgba(1,215,71,.20), transparent 60%),radial-gradient(900px 500px at 8% 110%, rgba(212,237,109,.12), transparent 55%),var(--ink);color:#fff;overflow:hidden;border-bottom-left-radius:34px;border-bottom-right-radius:34px}
   .hero::after{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--on-dark-hairline) 1px,transparent 1px),linear-gradient(90deg,var(--on-dark-hairline) 1px,transparent 1px);background-size:54px 54px;-webkit-mask-image:radial-gradient(900px 600px at 75% 0%, #000 0%, transparent 70%);mask-image:radial-gradient(900px 600px at 75% 0%, #000 0%, transparent 70%);opacity:.5}
-  .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;padding:80px 0 92px}
+  .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;padding:80px 28px 92px}
   .hero h1{font-size:clamp(2.4rem,4.8vw,3.9rem);line-height:1.08;letter-spacing:-.02em;font-weight:800;margin:.6rem 0 1.1rem}
   html[lang="en"] .hero h1{line-height:1.03;letter-spacing:-.035em}
   .hero h1 b{color:var(--lime);font-weight:800}
@@ -228,7 +228,7 @@
 
   /* ---------- credibility strip ---------- */
   .cred{background:var(--surface);border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)}
-  .cred-inner{padding:34px 0;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+  .cred-inner{padding:34px 28px;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
   .cred .lab{font-size:.92rem;color:var(--muted);max-width:30ch}
   .cred .stats{display:flex;gap:34px;flex-wrap:wrap}
   .cred .stat .n{font-family:var(--mono);font-weight:700;font-size:1.7rem;color:var(--ink)}
@@ -379,7 +379,7 @@
 
   /* ---------- responsive ---------- */
   @media (max-width:960px){
-    .hero-inner{grid-template-columns:1fr;gap:42px;padding:56px 0 70px}
+    .hero-inner{grid-template-columns:1fr;gap:42px;padding:56px 28px 70px}
     .hero .lede{max-width:48ch}
     .meta-grid{grid-template-columns:1fr;gap:36px}
     .agents-grid{display:flex;flex-direction:column}
